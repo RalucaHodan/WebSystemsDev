@@ -17,4 +17,4 @@ Here you will find the design, diagrams, data and an overview of the application
 <ul> Hodan Raluca Bianca 
        
   Husac George </ul>
-<b> Follow our journey here -> </b>
+<b> Follow our journey here -> </b> <a href =https://github.com/RalucaHodan/WebSystemsDev.wiki.git> Wiki Journal </a>
