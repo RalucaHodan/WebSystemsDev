@@ -1,0 +1,46 @@
+<div class="container">
+    <form class="form-container" [formGroup]="triviaForm">
+        <mat-form-field appearance="fill" class="control">
+            <mat-label>Number of Questions:</mat-label>
+            <input matInput placeholder="Number of Questions" type="number" formControlName="numberOfQuestions"
+                [max]="20">
+
+            <mat-hint>Please choose the number of Questions</mat-hint>
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+            <mat-label>Select Category:</mat-label>
+            <mat-select formControlName="category">
+                <mat-option *ngFor="let category of categoryOptions" [value]="category">
+                    {{category.description}}
+                </mat-option>
+
+            </mat-select>
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+            <mat-label>Select Difficulty:</mat-label>
+            <mat-select formControlName="difficulty">
+                <mat-option *ngFor="let difficulty of difficultyOptions" [value]="difficulty">
+                    {{difficulty.description}}
+                </mat-option>
+            </mat-select>
+        </mat-form-field>
+
+        <button mat-button type="submit" class="generate-game-button" [disabled]="!triviaForm.valid"
+            (click)="onGenerateGame()">Generate Game</button>
+    </form>
+
+    <div *ngIf="questionsList.length > 0">
+        <div *ngFor="let question of questionsList">
+            <mat-card>
+                <mat-card-title>{{question.question}}</mat-card-title>
+            </mat-card>
+        </div>
+    </div>
+
+    <div *ngIf="questionsList.length === 0">
+        Nu are raspunsuri
+    </div>
+
+</div>

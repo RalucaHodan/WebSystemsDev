@@ -1,0 +1,30 @@
+.footer {
+    position: absolute;
+    bottom: 0;
+    background-color: #383e4e;
+    height: 160px;
+
+    .copy-rights {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        .university {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        p {
+            font-size: 14px;
+            color: gray;
+        }
+
+        a {
+            color: white;
+            font-size: 14px;
+        }
+    }
+}

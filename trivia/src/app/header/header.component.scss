@@ -1,0 +1,21 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #383e4e;
+}
+
+.logo {
+    height: inherit;
+}
+
+.link {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 0 30px;
+    margin: 0 30px;
+    justify-content: center;
+    & a {
+        color: white;
+        text-decoration: none;
+    }
+}

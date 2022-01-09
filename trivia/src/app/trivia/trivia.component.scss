@@ -1,0 +1,24 @@
+.container {
+    height: calc(100% - 224px);
+
+    .form-container {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        overflow-y: auto;
+    }
+
+    .control {
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+    .generate-game-button {
+        background-color: green;
+        color: white;
+    }
+
+    button:disabled {
+        background-color: gray; 
+    }
+}
