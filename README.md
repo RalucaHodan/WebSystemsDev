@@ -9,7 +9,7 @@ Welcome to our journey! We are a team of grad students studying Software Develop
 <b>Description of the application</b>
 <p>
   Trivia games are addictive  &
-  The solution we are coming up with is to add a fun factor to it, with difficulty levels and various categories of questions. For all the loving trivia people, we will develop the project with JavaScript, MySQL Database and by using the services of Open Trivia Database API.
+  The solution we are coming up with is to add a fun factor to it, with difficulty levels and various categories of questions. For all the loving trivia people, we will develop the project with JavaScript using Angular Framework, MySQL Database and by using the services of Open Trivia Database API.
 Here you will find the design, diagrams, data and an overview of the application.
 <p>
 
