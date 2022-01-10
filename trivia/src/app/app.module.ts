@@ -19,7 +19,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import {MatCardModule} from '@angular/material/card';
 import {MatRadioModule} from '@angular/material/radio';
-import { QuestionComponent } from './question/question.component';
+
 
 @NgModule({
   declarations: [
@@ -29,8 +29,7 @@ import { QuestionComponent } from './question/question.component';
     HomeComponent,
     TriviaComponent,
     PageNotFoundComponent,
-    InfoComponent,
-    QuestionComponent,
+    InfoComponent
   ],
   imports: [
     BrowserModule,

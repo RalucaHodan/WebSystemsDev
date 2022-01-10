@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 const baseUrl = 'https://opentdb.com/api.php?';
 
+// back end response type
 interface Answer {
   category: string;
   correct_answer: string;
@@ -47,12 +48,7 @@ export class TriviaComponent implements OnInit {
 
   onGenerateGame() {
     const rawValue = this.triviaForm.getRawValue();
-    const obj = {
-      amount: rawValue.numberOfQuestions,
-      category: rawValue.category.value ? rawValue.category.value.toString(): null,
-      'difficulty=': rawValue.difficulty.value,
-    };
-
+   
     let params;
     console.error(rawValue.category.value)
     if(rawValue.category.value) {
@@ -70,7 +66,8 @@ export class TriviaComponent implements OnInit {
    
     const url = `${baseUrl}`;
     
-    this.http.get(url, { params }).subscribe((questions: any) =>{
+    this.http.get(url, { params })
+    .subscribe((questions: any) =>{
       this.questionsList = questions.results; 
 
       console.error(this.questionsList)
