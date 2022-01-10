@@ -1,0 +1,12 @@
+.rules-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: medium;
+    overflow: auto;
+    height: calc(100% - 224px);
+    .open-trivia {
+        padding-bottom: 10px;
+    }
+}
