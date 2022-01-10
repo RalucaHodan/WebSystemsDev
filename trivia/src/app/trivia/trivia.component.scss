@@ -1,5 +1,6 @@
 .container {
     height: calc(100% - 224px);
+    overflow: auto;
 
     .form-container {
         padding: 20px;
@@ -20,5 +21,9 @@
 
     button:disabled {
         background-color: gray; 
+    }
+    
+    .first {
+        padding-right: 20px;
     }
 }

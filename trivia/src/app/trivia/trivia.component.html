@@ -31,10 +31,16 @@
             (click)="onGenerateGame()">Generate Game</button>
     </form>
 
+    <div></div>
+
     <div *ngIf="questionsList.length > 0">
         <div *ngFor="let question of questionsList">
             <mat-card>
                 <mat-card-title>{{question.question}}</mat-card-title>
+                <mat-card-subtitle>
+                    <mat-radio-button class="answer first">True</mat-radio-button>
+                    <mat-radio-button class="answer second">False</mat-radio-button>
+                </mat-card-subtitle>
             </mat-card>
         </div>
     </div>

@@ -34,6 +34,8 @@ export class TriviaComponent implements OnInit {
     difficulty: new FormControl('', Validators.required),
   });
 
+  public questionsForm: FormGroup;
+
  public questionsList: Answer[] = [];
 
   constructor(private http: HttpClient) {}
@@ -69,7 +71,8 @@ export class TriviaComponent implements OnInit {
     const url = `${baseUrl}`;
     
     this.http.get(url, { params }).subscribe((questions: any) =>{
-      this.questionsList = questions.results;  
+      this.questionsList = questions.results; 
+
       console.error(this.questionsList)
     })
 
